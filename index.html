@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://kit.fontawesome.com/c5ee7ea8e9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>WAYS RPS Game</title>
+</head>
+<body>
+    <div class="containerBody">
+        <h1 class="logo">WAYS</h1>
+        <section class="scoreSec">
+            <div class="left">
+                <h2>ROCK</h2>
+                <h2>PAPER</h2>
+                <h2>SCISSORS</h2>
+            </div>
+            <div class="right">
+                    <i class="fa-solid fa-hand-back-fist fa-sm"></i>
+                    <i class="fa-solid fa-hand fa-sm"></i>
+                    <i class="fa-solid fa-hand-scissors fa-sm"></i>
+            </div>
+        </section>
+        <section class="gameSec">
+            <div class="gameLeft">
+                <h1 class="playerName">Ritchie</h1>
+                <div class="playerChoice">
+                    <div class="rock" id="showMe" ><i class="fa-solid fa-hand-back-fist fa-xl"></i></div>
+                    <div class="paper" id="showMe" ><i class="fa-solid fa-hand fa-xl"></i></div>
+                    <div class="scissors" id="showMe" ><i class="fa-solid fa-hand-scissors fa-xl"></i></div>
+                </div>
+                <div class="instruct blinking">Pick One</div>
+            </div>
+            <div class="gameMid">
+                <h3 class="winner">GOODLUCK!!!</h3>
+                <div class="scoreBWrap">
+                    <h5>Score Board</h5>
+                    <div class="scoreBoard"></div>
+                </div>
+                <button class="playAgain" data-againBtn>PLAY AGAIN</button>
+            </div>
+            <div class="gameRight">
+                <h1 class="computer">Computer</h1>
+                <div class="computerChoice">
+                    <div class="rock" id="showMe"><i class="fa-solid fa-hand-back-fist fa-xl"></i></div>
+                    <div class="paper" id="showMe"><i class="fa-solid fa-hand fa-xl"></i></div>
+                    <div class="scissors" id="showMe"><i class="fa-solid fa-hand-scissors fa-xl"></i></div>
+                </div>
+                <div class="rules">
+            <button class="rulesBtn">RULES</button>
+        </div>
+            </div>
+        </section>
+        
+    </div>
+
+    <div class="insertName">
+        <h1>Player Name</h1>
+        <form class="formSubmit">
+            <input class="nameInput" type="text">
+            <button type="submit" class="enterBtn">Enter</button>
+        </form>
+        <!-- Enter</input> -->
+    </div>
+
+    <div class="rulesPopUp">
+        <p class="rulesP">The ROCK is a closed fist; PAPER is a flat hand with fingers and thumb extended and the palm facing downward; and SCISSORS is a fist with the index and middle fingers fully extended toward the opposing player. ROCK wins against SCISSORS; PAPER wins against ROCK; and SCISSORS wins against PAPER.
+        There are three rounds and whoever wins the most rounds wins the game!
+        </p>
+        <button class="rulesOkayBtn">OKAY</button>
+    </div>
+
+    <div class="gameOver">
+        <h1 class="gameOverH1">CONGRATULATIONS YOU WIN</h1>
+        <button type="submit" class="tryAgainBtn" data-againBtn>TRY AGAIN</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
