@@ -56,7 +56,7 @@ body{
     display: flex;
     align-items: center;
     border: 2px solid var(--clr-primary-600--);
-    gap: 1rem;
+    /* gap: 1rem; */
     padding: 0.5rem;
     justify-content: space-between;
 }
@@ -223,6 +223,7 @@ body{
     border: 1px solid black;
     display: grid;
     justify-items: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -231,8 +232,7 @@ body{
     content: "";
     width: 2px;
     height: 17px;
-    background-color: green;
-    position: absolute;
+    background-color: red;
     transform: rotate(-45deg);
 }
 
@@ -240,9 +240,10 @@ body{
     content: "";
     width: 2px;
     height: 17px;
-    background-color: green;
+    background-color: red;
     position: absolute;
     transform: rotate(45deg);
+    justify-self: center;
 }
 
 .checkClass::before{
@@ -250,7 +251,6 @@ body{
     width: 2px;
     height: 10px;
     background-color: green;
-    position: absolute;
     transform: rotate(-45deg) translateX(-5.7px) translateY(-1px);
 }
 
@@ -261,6 +261,7 @@ body{
     background-color: green;
     position: absolute;
     transform: rotate(45deg) translateX(3px) translateY(-1.2px);
+    justify-self: center;
 }
 
 .playAgain, .enterBtn, .rulesOkayBtn, .tryAgainBtn{
@@ -339,6 +340,9 @@ body{
     line-height: 1.3em;
     font-size: 20px;
     transition: 0.5s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .gameOver{
@@ -346,6 +350,9 @@ body{
     background-color: var(--clr-primary-600--);
     border-radius: unset;
     text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .tryAgainBtn, .rulesOkayBtn{

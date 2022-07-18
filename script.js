@@ -90,7 +90,7 @@ playerchooses.forEach((playerchoose) => {
       });      
     }, 3000);
     setTimeout(() => {
-      winner.innerText = "PICK AGAIN!!!!";
+      winner.innerText = "PICK AGAIN!!";
     }, 1800);
     
 
@@ -156,7 +156,7 @@ playerchooses.forEach((playerchoose) => {
         ) {
         setTimeout(() => {
             gameOver.classList.add("show");
-            gameOverH1.innerText = "CONGRATULATIONS!!! YOU WIN!!"
+            gameOverH1.innerText = "CONGRATS! YOU WIN!!"
             tryAgainBtn.innerText = "GO AGAIN"
             gameOverH1.classList.add("blinking");
             containerBody.classList.add("userSelect");
@@ -182,7 +182,7 @@ playerchooses.forEach((playerchoose) => {
         ) {
         setTimeout(() => {
             gameOver.classList.add("show");
-            gameOverH1.innerText = "CONGRATULATIONS!!! YOU WIN!!"
+            gameOverH1.innerText = "CONGRATS! YOU WIN!!"
             tryAgainBtn.innerText = "GO AGAIN"
             gameOverH1.classList.add("blinking");
             containerBody.classList.add("userSelect");
@@ -212,7 +212,7 @@ playerchooses.forEach((playerchoose) => {
         }
         gameOver.classList.remove("show");
         containerBody.classList.remove("userSelect");
-        winner.innerText = "GOODLUCK!!!"
+        winner.innerText = "GOOD LUCK!"
         gameOverH1.classList.remove("blinking");
       })
     })
