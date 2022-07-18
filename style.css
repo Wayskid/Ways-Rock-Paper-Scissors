@@ -225,6 +225,7 @@ body{
     justify-items: center;
     justify-content: center;
     align-items: center;
+    grid-template-areas: "stacks";
 }
 
 
@@ -233,6 +234,7 @@ body{
     width: 2px;
     height: 17px;
     background-color: red;
+    grid-area: stacks;
     transform: rotate(-45deg);
 }
 
@@ -241,9 +243,9 @@ body{
     width: 2px;
     height: 17px;
     background-color: red;
-    position: absolute;
+    /* position: absolute; */
+    grid-area: stacks;
     transform: rotate(45deg);
-    justify-self: center;
 }
 
 .checkClass::before{
@@ -251,17 +253,15 @@ body{
     width: 2px;
     height: 10px;
     background-color: green;
-    transform: rotate(-45deg) translateX(-5.7px) translateY(-1px);
+    transform: rotate(-45deg) translateX(-12px) translateY(2.5px);
 }
 
 .checkClass::after{
     content: "";
     width: 2px;
-    height: 15px;
+    height: 17px;
     background-color: green;
-    position: absolute;
-    transform: rotate(45deg) translateX(3px) translateY(-1.2px);
-    justify-self: center;
+    transform: rotate(50deg) translateX(-3px) translateY(-5.2px);
 }
 
 .playAgain, .enterBtn, .rulesOkayBtn, .tryAgainBtn{
